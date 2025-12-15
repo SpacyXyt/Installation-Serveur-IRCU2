@@ -135,7 +135,7 @@ ircd@mail:~$ cd ircd/bin/
 ircd@mail:~/ircd/bin$  ./ircd -f ../lib/ircd.conf
 ```
 
-# 5. Pour aller plus loing
+# 5. Pour aller plus loin
 
 ## Configuration du firewall
 Un tuto arrivera bientôt sur ce sujet. 
