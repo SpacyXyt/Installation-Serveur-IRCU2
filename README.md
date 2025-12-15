@@ -66,3 +66,63 @@ Création d'une backup de la config avant la modification de celle-ci
 ```bash
 ircd@mail:~/ircd$ cp example.conf ircd.conf
 ```
+
+# 3. Configuration de ircd.conf
+
+*⚠️ Si vous ne trouvez pas le fichier, veuillez retourner à la commande précedente et verifier pour des erreurs.* 
+
+Maintenant que l'ircu est installer nous allons devoir le configurer afin qu'il puisse ce lancer.
+Pour cela nous allons l'ouvrir avec l'éditeur de texte de votre choix. (Seulement les plus connue sont réferencer dans cette documentation)
+
+## 3.1. Ouvrir le fichier
+
+### 3.1.1. Avec nano
+⚠️ L'installation de celui-ci est nécessaire:
+```bash
+apt install nano
+```
+Pour ouvrir le fichier :
+```bash
+nano ircd.conf
+```
+Une documentation sur nano arrive bientôt en attendant se referencer ici: https://linuxize.com/post/how-to-use-nano-text-editor/ 
+
+### 3.1.2. Avec vim
+Vim est preinstaller sur Ubuntu 24.04.3 LTS donc pas besoin de l'installer.
+
+Pour ouvrir le fichier: 
+```bash
+vim ircd.conf
+```
+
+## 3.2. La config
+Dans ce fichier vous pourrez configurer beaucoup d'option et comme je ne peut pas faire une documentation de 30 pages sur une config je ne montrerais que les parties essentiel au bon fonctionnement de l'ircd.
+
+### 3.2.1. Général
+Vous trouverez dans le fichier ircd.conf une section prennant cette forme:
+```conf
+General {
+    name = "London.UK.Eu.UnderNet.org";
+    description = "University of London, England";
+    numeric = 1;
+};
+```
+Dans cette section nous voyons 3 paramètres:
+
+```name``` : Ici vous pouvez spécifier le nom de votre node ircu, je peut vous conseillez si vous avez un domaine de suivre la forme suivante:
+
+```conf
+ville.pays[.eu].votre.domaine
+```
+
+Si vous n'avez pas de domaine :
+
+```conf
+ville.pays[.eu].undernet.org
+```
+
+⚠️ Je vous déconseille également de mettre des majuscules / des charactères spéciaux.
+
+```description```: Description de votre serveur, les charactères '[' et ']' ne doivent pas etre utiliser pour la compatibilité avec les anciens serveurs.
+
+```numeric``` : Cette valeur doit être un nombre **unique** sur le réseaux sur lequel tourne le serveur ircd il peut etre compris entre 0 et 4095. Il n'est pas mis à jour lors d'un rehash, un restart du serveur est requis ! 
