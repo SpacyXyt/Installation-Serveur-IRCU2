@@ -16,7 +16,7 @@ root@mail:~# apt install wget git libssl-dev openssl bison libreadline-dev zlib1
 
 # 2. Installation de Ircu2
 
-Création du nouvelle utilisateur afin de jail le service
+Création du nouvelle utilisateur afin de jail le service (Spécifier le mot de passe souhaiter)
 ```bash
 root@mail:~# adduser ircd
 ```
@@ -29,4 +29,9 @@ root@mail:~# su - ircd
 Clonage de Ircu2 à la racine de l'utilisateur ircd
 ```bash
 ircd@mail:~$ git clone https://github.com/UndernetIRC/ircu2
+```
+
+Accès au répertoire nouvellement crée par le clonage depuis github
+```bash
+ircd@mail:~$ cd ircu2/
 ```
