@@ -109,11 +109,11 @@ General {
 ```
 Dans cette section nous voyons 3 paramètres:
 
-```name``` : Ici vous pouvez spécifier le nom de votre node ircu, je peut vous conseillez si vous avez un domaine de suivre la forme suivante:
+```name``` : Ici vous pouvez spécifier le nom de votre node ircu, cela reste une simple recomendation mais je peut vous conseillez si vous avez un domaine de suivre la forme suivante:
 
 ```conf
-ville.pays[.eu].votre.domaine
-```
+ville.pays.votre.domaine
+``` 
 
 Si vous n'avez pas de domaine :
 
@@ -126,3 +126,10 @@ ville.pays[.eu].undernet.org
 ```description```: Description de votre serveur, les charactères '[' et ']' ne doivent pas etre utiliser pour la compatibilité avec les anciens serveurs.
 
 ```numeric``` : Cette valeur doit être un nombre **unique** sur le réseaux sur lequel tourne le serveur ircd il peut etre compris entre 0 et 4095. Il n'est pas mis à jour lors d'un rehash, un restart du serveur est requis ! 
+
+# 4. Lancement du serveur
+Maintenant que la config est prête vous pouvez lancer la commande à l'aide de la commande suivante:
+```
+ircd@mail:~/ircd/lib$ cd
+ircd@mail:~$ cd ircd/bin/
+ircd@mail:~/ircd/bin$  ./ircd -f ../lib/ircd.conf
