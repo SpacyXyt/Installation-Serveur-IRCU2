@@ -35,3 +35,9 @@ Accès au répertoire nouvellement crée par le clonage depuis github
 ```bash
 ircd@mail:~$ cd ircu2/
 ```
+
+Préparation du projet pour la compilation futur
+⚠️ Si vous avez un utilisateur diférent de "*ircd*", veuillez changer le chemin /home/{votre username}/ircd
+```bash
+ircd@mail:~/ircd$ ./configure --prefix=/home/ircd/ircd --with-maxcon=1024
+```
