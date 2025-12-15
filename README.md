@@ -11,7 +11,7 @@ Documentation sur l'installation et la configuration de Ircu2 sous 24.04.3 LTS
 #> apt update
 #> apt upgrade
 #> apt install build-essential
-#> apt install wget git libssl libssl-dev openssl bison libreadline-dev zlib1g-dev automake make flex mlocate byacc
+#> apt install wget git libssl-dev openssl bison libreadline-dev zlib1g-dev automake make flex byacc
 ```
 
 # 2. Installation de Ircu2
