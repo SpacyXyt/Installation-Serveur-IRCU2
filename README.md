@@ -44,10 +44,25 @@ ircd@mail:~/ircd$ ./configure --prefix=/home/ircd/ircd --with-maxcon=1024
 
 Lancement de la compilation du projet..
 ```bash
-ircd@mail:~$ make
+ircd@mail:~/ircd$ make
 ```
 
 Installation du projet sur le système
 ```bash
-ircd@mail:~$ make install
+ircd@mail:~/ircd$ make install
+```
+
+Retour à la racine de l'utilisateur
+```bash
+ircd@mail:~/ircd$ cd
+```
+
+Accès au répertoire incluant la config de l'ircu
+```bash
+ircd@mail:~/ircd$ cd ircd/lib
+```
+
+Création d'une backup de la config avant la modification de celle-ci
+```bash
+ircd@mail:~/ircd$ cp example.conf ircd.conf
 ```
