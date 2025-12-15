@@ -41,3 +41,13 @@ Préparation du projet pour la compilation futur
 ```bash
 ircd@mail:~/ircd$ ./configure --prefix=/home/ircd/ircd --with-maxcon=1024
 ```
+
+Lancement de la compilation du projet..
+```bash
+ircd@mail:~$ make
+```
+
+Installation du projet sur le système
+```bash
+ircd@mail:~$ make install
+```
