@@ -133,3 +133,13 @@ Maintenant que la config est prête vous pouvez lancer la commande à l'aide de 
 ircd@mail:~/ircd/lib$ cd
 ircd@mail:~$ cd ircd/bin/
 ircd@mail:~/ircd/bin$  ./ircd -f ../lib/ircd.conf
+```
+
+# 5. Pour aller plus loing
+
+## Configuration du firewall
+Un tuto arrivera bientôt sur ce sujet. 
+
+## Client IRC
+Un tuto arrivera bientôt sur ce sujet.
+
